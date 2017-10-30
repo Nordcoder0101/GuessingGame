@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Random Questions!</h1>
+    <h2>Written by Greg Nordeng</h2>
+  </body>
+  <script>
+
+    var catTrick = prompt('What is one trick you taught your cat?  Type "to" (then the trick it performs, example "to jump")');
+    console.log('User tought cat ' + catTrick);
+    alert('Wow, you actually taught your cat ' + catTrick + '!');
+
+    var userEmoState = prompt('Cats who are tought ' + catTrick + ', are normally happy cats, what is YOUR emotional state?');
+    console.log('users emotional state:' + userEmoState);
+
+    if(userEmoState === 'happy' || userEmoState === "relaxed"  || userEmoState === "joyful"){
+      alert('Glad you are ' + userEmoState +'!');
+    }else if(userEmoState === "sad" || userEmoState === "mad" || userEmoState === "depressed"){
+      alert('You might need therapy if you feel ' + userEmoState + '.');
+    }else{
+      alert("Have a great day feeling " + userEmoState + '!');
+    }
+
+
+    var hollyWoodCrush = prompt('Now that we know you taught your cat ' + catTrick + ' and that you feel ' + userEmoState + ', it\'s important for me to know who your Hollywood crush is, so...  Who is it?');
+    console.log('user\'s crush is ' + hollyWoodCrush);
+
+    if(hollyWoodCrush === "Mila Kunis") {
+      alert('Back off!!!  That\'s my crush!');
+    }else{
+    alert('Hot damn!!  ' + hollyWoodCrush + ' is super hot!  Good choice.');
+  }
+    var winonaRyder = prompt('So I know you are a ' + userEmoState + ' person, who tought their cat ' + catTrick + '; I heard ' + hollyWoodCrush + ' love\'s people who are ' + userEmoState + ' but I have one more very important question.  Do you like Winona Ryder?');
+    console.log('like Winona?:' + winonaRyder);
+
+    if(winonaRyder === "yes") {
+      alert("Cool, I was just wondering.");
+    }else{
+      alert('Hmph, I have seen Stranger Things.');
+    }
+  </script>
+</html>
